@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="FacultyMaster.master.cs" Inherits="FeedbackSystem.faculty.FacultyMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../css/reset.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
+    <script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="../js/cufon-yui.js"></script>
+    <script type="text/javascript" src="../js/cufon-replace.js"></script>
+    <script type="text/javascript" src="../js/Myriad_Pro_300.font.js"></script>
+    <script type="text/javascript" src="../js/Myriad_Pro_400.font.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="page1">
+    <div class="wrap">
+        <header>
+            <div class="container" style="margin-top:-5%;">
+                <h1><a href="#">Admin Dashboard</a></h1>
+                
+            </div>
+        </header>
+        <div class="container">
+            <aside>
+                <h3>Menu</h3>
+                <ul class="categories">
+                    <li><span><a href="FacultyHome.aspx">Dashboard</a></span></li>
+                    <li><span><a href="SelfAppraisalPart1.aspx">Self Appraisal</a></span></li>
+                    <li><span><a href="PeerFBList.aspx">Peer Appraisals</a></span></li>
+                    <li><span><a href="Feedback.aspx">View Feedback</a></span></li>
+                    <%--<li><span><a href="MyProfile.aspx">My Profile</a></span></li>--%>
+                    <li><span><a href="ChangePassword.aspx">Change Password</a></span></li>                                        
+                    <li class="last"><span><a href="../FacultyLogin.aspx">Log out</a></span></li>
+                </ul>
+                <%--<form action="#" id="newsletter-form">
+                    <fieldset>
+                        <div class="rowElem">
+                            <h2>Newsletter</h2>
+                            <input type="email" value="Enter Your Email Here" onfocus="if(this.value=='Enter Your Email Here'){this.value=''}" onblur="if(this.value==''){this.value='Enter Your Email Here'}">
+                            <div class="clear"><a href="#" class="fleft">Unsubscribe</a><a href="#" class="fright">Submit</a></div>
+                        </div>
+                    </fieldset>
+                </form>--%>
+                <h2>Fresh <span>News</span></h2>
+                <ul class="news">
+                    <li><strong>June 30, 2016</strong>
+                        <h4><a href="#">Fee Concession</a></h4>
+                        All the students are hereby informed that those admitted through CAP they are eligible to get fee concession. </li>
+                    <li><strong>June 14, 2016</strong>
+                        <h4><a href="#">Message</a></h4>
+                        Final Fee for Higher and Technical Courses for the Academic Year 2015-16 as per the Shikshan Shulka Samiti circular-Dtd. 2nd December 2015 -Bifurcation of Total Fees is as follows- "Tution Fee"-Rs.66,455/- and "Development Fee"-Rs.6,645/- (Total Fee- Rs. 73,100/-). </li>
+                    <li><strong>May 29, 2016</strong>
+                        <h4><a href="http://www.tpolymumbai.in/msgboard/pdf/css_timeline_2016_17.pdf" target="_blank">Central Sector Scholarship</a></h4>
+                        Central Sector Scholarship Scheme timeline 2016-17. </li>
+                </ul>
+            </aside>
+            <section id="content">
+                <%--<div id="banner">
+                    <h2>Professional <span>Online Education <span>Since 1992</span></span></h2>
+                </div>--%>
+                <div class="inside">
+                    <div style="margin-left:-7%;">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <div class="footerlink">
+            <p class="lf">Copyright &copy; 2016 <a href="#">Thakur Polytechnic</a> - All Rights Reserved</p>
+            <p class="rf">Design by <a href="http://www.tpolymumbai.in/" target="_blank">Thakur Polytechnic</a></p>
+            <div style="clear: both;"></div>
+        </div>
+    </footer>
+    
+</body>
+</html>

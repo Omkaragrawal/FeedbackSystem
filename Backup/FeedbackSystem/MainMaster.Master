@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainMaster.master.cs" Inherits="FeedbackSystem.MainMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/cufon-yui.js"></script>
+    <script type="text/javascript" src="js/cufon-replace.js"></script>
+    <script type="text/javascript" src="js/Myriad_Pro_300.font.js"></script>
+    <script type="text/javascript" src="js/Myriad_Pro_400.font.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="page1">
+    <div class="wrap">
+        <header>
+            <div class="container">
+                <h1><a href="#">Thakur Polytechnic</a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="HomePage.aspx" class="m1">Home Page</a></li>
+                        <li><a href="AboutUs.aspx" class="m2">About Us</a></li>
+                        <li><a href="Articles.aspx" class="m3">Our Articles</a></li>
+                        <li><a href="ContactUs.aspx" class="m4">Contact Us</a></li>
+                        <li class="last"><a href="Sitemap.aspx" class="m5">Sitemap</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="container">
+            <aside>
+                <h3>Menu</h3>
+                <ul class="categories">
+                    <li><span><a href="HomePage.aspx">Home</a></span></li>
+                    <%--<li><span><a href="AdminLogin.aspx">Administrator Login</a></span></li>--%>
+                    <li><span><a href="HOD_Princi_Login.aspx">HOD/Principal Login</a></span></li>
+                    <li><span><a href="FacultyLogin.aspx">Faculty Login</a></span></li>
+                    <li><span><a href="StudentLogin.aspx">Students Login</a></span></li>
+                    <%--<li><span><a href="#">Basic Information</a></span></li>--%>
+                    <%--<li><span><a href="#">Vacancies</a></span></li>--%>
+                    <li class="last"><span><a href="http://www.tpolycodept.weebly.com/" target="_blank">College Website</a></span></li>
+                </ul>
+                <%--<form action="#" id="newsletter-form">
+                    <fieldset>
+                        <div class="rowElem">
+                            <h2>Newsletter</h2>
+                            <input type="email" value="Enter Your Email Here" onfocus="if(this.value=='Enter Your Email Here'){this.value=''}" onblur="if(this.value==''){this.value='Enter Your Email Here'}">
+                            <div class="clear"><a href="#" class="fleft">Unsubscribe</a><a href="#" class="fright">Submit</a></div>
+                        </div>
+                    </fieldset>
+                </form>--%>
+                <h2>CO <span>DEPT.</span></h2>
+                <ul class="news">
+                    
+                        <h4><a href="#">VISION</a></h4>
+                       Computer Engineering department will strive to prepare technically competent and skilled diploma computer engineers useful to the industry and the society. </li>
+                    
+                        <h4><a href="#">MISSION</a></h4>
+                       To provide academic excellence in computer engineering through faculty up-gradation, modern infrastructure and continuous industry institute interaction. </li>
+                   
+                        
+                </ul>
+            </aside>
+            <section id="content">
+
+                <div class="inside">
+                    <div>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <div class="footerlink">
+            <p class="lf">Copyright &copy; 2016 <a href="#">Thakur Polytechnic</a> - All Rights Reserved</p>
+            <p class="rf">Design by <a href="http://www.tpolymumbai.in/" target="_blank">Thakur Polytechnic</a></p>
+            <div style="clear: both;"></div>
+        </div>
+    </footer>
+    
+</body>
+</html>
